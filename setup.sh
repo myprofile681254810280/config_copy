@@ -1,6 +1,7 @@
 #ROOT="$(dirname "$(realpath "$0")")"
 #echo "$ROOT"
 
+cd ./config || exit
 
 
 cp kdeglobals ~/.config/
