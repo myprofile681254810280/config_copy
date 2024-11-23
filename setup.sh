@@ -3,6 +3,11 @@
 
 cp kwinrulesrc ~/.config/
 
+cp kdeglobals ~/.config/
+cp konsolerc ~/.config/
+cp dolphinrc ~/.config/
+
+
 rm ~/.config/mpv -r
 cp mpv -r ~/.config
 
@@ -24,4 +29,3 @@ cp kglobalshortcutsrc  ~/.config/
 cp khotkeysrc  ~/.config/
 #为了关掉而设置
 cp kiorc ~/.config/
-

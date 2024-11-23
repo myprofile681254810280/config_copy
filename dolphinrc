@@ -1,0 +1,47 @@
+MenuBar=Disabled
+
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
+[FoldersPanel]
+HiddenFilesShown=true
+
+[General]
+BrowseThroughArchives=true
+ConfirmClosingMultipleTabs=false
+GlobalViewProps=false
+OpenExternallyCalledFolderInNewTab=false
+RememberOpenedTabs=false
+ShowSelectionToggle=false
+ShowSpaceInfo=false
+ShowStatusBar=false
+Version=202
+ViewPropsTimestamp=2017,8,22,18,39,59
+
+[Icons]
+Theme=theme-dolphin
+
+[IconsMode]
+IconSize=256
+MaximumTextLines=4
+PreviewSize=256
+TextWidthIndex=0
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[PlacesPanel]
+IconSize=22
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail,svgthumbnail,ffmpegthumbs
+
+[Shortcut Schemes]
+Current Scheme=Default
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly

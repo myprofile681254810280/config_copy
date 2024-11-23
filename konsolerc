@@ -1,0 +1,25 @@
+[Desktop Entry]
+DefaultProfile=bitmap.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+AllowMenuAccelerators=true
+RememberWindowSize=false
+ShowWindowTitleOnTitleBar=true
+UseSingleInstance=true
+
+[MainWindow]
+MenuBar=Disabled
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+
+[Shortcut Schemes]
+Current Scheme=bitmap
+
+[TabBar]
+TabBarVisibility=ShowTabBarWhenNeeded
+
+[UiSettings]
+ColorScheme=
