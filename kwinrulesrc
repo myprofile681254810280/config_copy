@@ -1,0 +1,82 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[04af8414-68b7-48c1-b32f-29176ab77c0c]
+Description=ff
+noborder=true
+noborderrule=5
+types=1
+wmclass=firefox
+wmclassmatch=1
+
+[1]
+Description=myvte-bitmap
+noborder=false
+noborderrule=2
+wmclass=myvte-bitmap myvte-bitmap
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
+Description=qmlterm
+noborder=false
+noborderrule=2
+wmclass=qmlterm qmlterm
+wmclasscomplete=true
+wmclassmatch=1
+
+[3]
+Description=mpv
+noborderrule=2
+types=1
+wmclass=gl mpv
+wmclasscomplete=true
+wmclassmatch=1
+
+[4]
+Description=fcitx
+noborderrule=2
+wmclass=fcitx fcitx
+wmclassmatch=1
+
+[5]
+Description=dolphin
+decocolor=BrDolphin
+decocolorrule=2
+wmclass=dolphin dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[6]
+Description=mpv
+noborderrule=2
+types=1
+wmclass=gl mpv
+wmclasscomplete=true
+wmclassmatch=1
+
+[7]
+Description=fcitx
+noborderrule=2
+wmclass=fcitx fcitx
+wmclassmatch=1
+
+[7fd35d3f-ef65-4dab-af63-850f56bdadfd]
+Description=dolphin
+decocolor=BreezeLight
+decocolorrule=2
+wmclass=dolphin dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[8bbc0717-e16e-4343-9dbd-78f9dd436ac0]
+Description=ssss
+decocolor=BreezeDark
+decocolorrule=2
+wmclass=ssss ssss
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=5
+rules=1,2,3,4,5

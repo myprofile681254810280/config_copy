@@ -1,0 +1,16 @@
+#
+如何,找到合适的filter?
+mpv默认播放dvd iso的时候, 会出现横条, 就像sega md 模拟器在大分辨率下一样
+
+解决办法是在画面上加filter, 
+mpv --vf=help > 1  #这条命令可以列出mpv可用的所有filter
+
+然后我们会需要用ffmpeg使用所用filter 生成截图
+for n in open('1'):
+    n=n.strip()
+    if len(n)<1:
+        continue
+    n=n.split()[0]
+    print('ffmpeg -ss 225 -i "$file" -vf %s -vframes 1 %s.png'%(n,n))
+
+最后根据截图找出合适的filter
