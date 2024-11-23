@@ -7,6 +7,8 @@ cp kdeglobals ~/.config/
 cp konsolerc ~/.config/
 cp dolphinrc ~/.config/
 
+#这个好像其实并没有被读取，但是暂且留一份，这份是给kwin用的
+cp freetilerc ~/.config/
 
 #默认的mpv不太好用，比如说窗口的长宽是固定比例的
 rm ~/.config/mpv -r
@@ -14,6 +16,9 @@ cp mpv -r ~/.config
 #fontconfig基本上是手写的，需要备份
 rm ~/.config/fontconfig -r
 cp fontconfig -r ~/.config
+#一份基本的htop配置，实际用总会有各种改动
+rm ~/.config/htop -r
+cp htop -r ~/.config
 
 #plasma 相关的一组，似乎不完全是关于plasmashell的，但是应该都有用
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/
@@ -41,4 +46,5 @@ cp breezerc ~/.config/
 mkdir ~/.config/pip/
 echo "[global]"  > ~/.config/pip/pip.conf
 echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
+
 
