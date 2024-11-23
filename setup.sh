@@ -19,4 +19,9 @@ cp kwinrc  ~/.config/
 #这里有屏幕亮度，以及关机睡眠方面的配置
 cp powerdevilrc  ~/.config/
 
+#两份非常冗余的快捷键设置，未来需要改动的话，大概需要大修消除冗余，但是现在并不想去改
+cp kglobalshortcutsrc  ~/.config/
+cp khotkeysrc  ~/.config/
+#为了关掉而设置
+cp kiorc ~/.config/
 
