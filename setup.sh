@@ -19,6 +19,12 @@ cp fontconfig -r ~/.config
 #一份基本的htop配置，实际用总会有各种改动
 rm ~/.config/htop -r
 cp htop -r ~/.config
+#
+rm ~/.config/yapf -r
+cp yapf -r ~/.config
+#最危险的配置，里面的交叉引用最多，应该考虑减少里面的交叉引用
+rm ~/.config/fish -r
+cp fish -r ~/.config
 
 #plasma 相关的一组，似乎不完全是关于plasmashell的，但是应该都有用
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/
@@ -39,12 +45,14 @@ cp khotkeysrc  ~/.config/
 #为了关掉而设置
 cp kiorc ~/.config/
 cp baloofilerc ~/.config/
-# breezerc做了一些和kwinrule类似的操作
+# breezerc做了一些和kwinrule类似的操作, oxygen里面则是以前留下的类似配置，而现在并不用oxygen
 cp kwinrulesrc ~/.config/
 cp breezerc ~/.config/
+cp oxygenrc ~/.config/
 
 mkdir ~/.config/pip/
 echo "[global]"  > ~/.config/pip/pip.conf
 echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
+
 
 
