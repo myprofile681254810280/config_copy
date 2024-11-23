@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+
+    <!-- Prevent Gnome from using embedded bitmaps in fonts like Calibri -->
+    <match target="font">
+        <edit name="embeddedbitmap" mode="assign"><bool>false</bool></edit>
+    </match>
+    <!-- Reject bitmap fonts in favour of Truetype, Postscript, etc. -->
+    <!-- Substitute truetype fonts for bitmap ones -->
+    <match target="font">
+        <edit name="prefer_outline"><bool>true</bool></edit>
+    </match>
+
+
+    <match target="pattern">
+      <edit name="family" mode="prepend">
+          <!--<string>setofont</string>-->
+          <string>droid sans</string>
+          <string>wenquanyi micro hei</string>
+          <string>yaHei consolas hybrid</string>
+          <string>font awesome</string>
+      </edit>
+    </match>
+
+    <!--
+    <match target="font">
+        <edit name="antialias" mode="assign">
+            <bool>false</bool>
+        </edit>
+    </match>
+    -->
+    <!--
+    <match target="font" >
+        <test name="size" qual="any" compare="more">
+            <double>12</double>
+        </test>
+        <edit name="antialias" mode="assign">
+            <bool>true</bool>
+        </edit>
+    </match>
+    -->
+
+    <!--
+    <match target="font">
+        <edit name="antialias" mode="assign">
+            <bool>false</bool>
+        </edit>
+    </match>
+  -->
+
+</fontconfig>

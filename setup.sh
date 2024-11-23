@@ -1,15 +1,19 @@
 #ROOT="$(dirname "$(realpath "$0")")"
 #echo "$ROOT"
 
-cp kwinrulesrc ~/.config/
+
 
 cp kdeglobals ~/.config/
 cp konsolerc ~/.config/
 cp dolphinrc ~/.config/
 
 
+#默认的mpv不太好用，比如说窗口的长宽是固定比例的
 rm ~/.config/mpv -r
 cp mpv -r ~/.config
+#fontconfig基本上是手写的，需要备份
+rm ~/.config/fontconfig -r
+cp fontconfig -r ~/.config
 
 #plasma 相关的一组，似乎不完全是关于plasmashell的，但是应该都有用
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/
@@ -30,8 +34,11 @@ cp khotkeysrc  ~/.config/
 #为了关掉而设置
 cp kiorc ~/.config/
 cp baloofilerc ~/.config/
-
+# breezerc做了一些和kwinrule类似的操作
+cp kwinrulesrc ~/.config/
+cp breezerc ~/.config/
 
 mkdir ~/.config/pip/
 echo "[global]"  > ~/.config/pip/pip.conf
 echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
+
