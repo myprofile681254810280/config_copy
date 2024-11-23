@@ -29,3 +29,8 @@ cp kglobalshortcutsrc  ~/.config/
 cp khotkeysrc  ~/.config/
 #为了关掉而设置
 cp kiorc ~/.config/
+
+
+mkdir ~/.config/pip/
+echo "[global]"  > ~/.config/pip/pip.conf
+echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
