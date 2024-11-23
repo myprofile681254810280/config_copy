@@ -46,11 +46,9 @@ cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/
 cp plasmanotifyrc ~/.config/
 cp plasmaparc ~/.config/
 cp plasmashellrc ~/.config/
+#这里存放了desktoptheme的选择，现在是自制的breeze-dark-opaque
+#并且，自从kde6开始，这里存放了contrast等参数，或许调整下会有很好的效果
 cp plasmarc ~/.config/
-#注意，这里的plasmarc中设置了breeze-dark，这是特指file:///usr/share/plasma/desktoptheme/breeze-dark
-#这个东西是可以修改contrast，来获得更好的显示效果的，但是黑色并不适合修改，如果是白色主题会比较好
-#好像是自动生成的，没有保留的必要
-#并且这个功能我们无法复现，可能因为breeze现在的背景色太白了，也可能因为其实它被删除了
 
 #kwinrc有另外一个对选项注释更清晰，用configwriter写的备份。   但是configwriter还有接口升级之类的问题，反而直接保存的这份更方便，  不过没有注释还是很大的缺点。可以考虑把configwriter的那份留下作为注释，在需要的时候看
 cp kwinrc  ~/.config/

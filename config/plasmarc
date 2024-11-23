@@ -1,6 +1,14 @@
 [Theme]
-name=breeze-dark
+name=breeze-dark-opaque
 
 [Theme-plasmathemeexplorer]
 name=default
 
+[ContrastEffect]
+enabled=true
+contrast=0.3
+intensity=1.9
+saturation=1.9
+
+[AdaptiveTransparency]
+enabled=true
