@@ -10,6 +10,16 @@ cp dolphinrc ~/.config/
 #这个好像其实并没有被读取，但是暂且留一份，这份是给kwin用的
 cp freetilerc ~/.config/
 
+#
+rm ~/.config/yapf -r
+cp yapf -r ~/.config
+
+#主要是fcitx的外观配置，以及设定rime为主要输入法
+rm ~/.config/fcitx5 -r
+cp fcitx5 -r ~/.config
+#不记得是什么了，但是似乎是一些色彩配置，看起来像是kde用的
+rm ~/.config/default -r
+cp default -r ~/.config
 #默认的mpv不太好用，比如说窗口的长宽是固定比例的
 rm ~/.config/mpv -r
 cp mpv -r ~/.config
@@ -19,12 +29,16 @@ cp fontconfig -r ~/.config
 #一份基本的htop配置，实际用总会有各种改动
 rm ~/.config/htop -r
 cp htop -r ~/.config
-#
-rm ~/.config/yapf -r
-cp yapf -r ~/.config
 #最危险的配置，里面的交叉引用最多，应该考虑减少里面的交叉引用
 rm ~/.config/fish -r
 cp fish -r ~/.config
+#里面有一些css，似乎是选择arc theme的时候留下的，此外有用的是setting.ini,里面设置了icon选择
+rm ~/.config/gtk-3.0 -r
+cp gtk-3.0 -r ~/.config
+rm ~/.config/gtk-4.0 -r
+cp gtk-4.0 -r ~/.config
+cp .gtkrc-2.0 ~/
+cp .gtkrc-2.0.mine ~/
 
 #plasma 相关的一组，似乎不完全是关于plasmashell的，但是应该都有用
 cp plasma-org.kde.plasma.desktop-appletsrc ~/.config/
@@ -50,9 +64,19 @@ cp kwinrulesrc ~/.config/
 cp breezerc ~/.config/
 cp oxygenrc ~/.config/
 
+
 mkdir ~/.config/pip/
 echo "[global]"  > ~/.config/pip/pip.conf
 echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
+#这个或许关掉比较好，因为可能删掉我们放的其他设置
+echo "[global]"  > ~/.gitconfig
+echo "proxy = $myproxy" >> ~/.gitconfig
+
+
+
+
+
+
 
 
 

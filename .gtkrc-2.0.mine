@@ -1,0 +1,38 @@
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
+
+gtk-theme-name="Arc"
+gtk-icon-theme-name="theme-default"
+gtk-cursor-theme-name="PolarCursorTheme"
+
+#gtk-icon-theme-name="AwOkenWhite"
+#gtk-font-name="Lucida Gr 12"
+#gtk-cursor-theme-name="Breeze_Snow"
+#gtk-cursor-theme-name="capitaine-cursors-r1"
+#gtk-cursor-theme-name="PolarCursorTheme"
+
+#xfce4已经到gtk3
+## for xfce4-panel
+#style "panel"
+#{
+#  bg[NORMAL] = "#FFFFFF"
+#  fg[NORMAL] = "#000000"
+#  #font_name="Lucida Gr 12"
+#}
+#style "menu"
+#{
+##  bg[NORMAL] = "#FFFFFF"
+##  fg[NORMAL] = "#000000"
+##  font_name="monospace 12"
+#}
+#
+#
+#widget_class "*Panel*"      style "panel"
+#widget "*Panel*"            style "panel"
+#class "*Panel*"             style "panel"
+#
+##widget_class "*Menu*"      style "menu"
+##widget "*Menu*"            style "menu"
+##class "*Menu*"             style "menu"
+##gtk-modules = "canberra-gtk-module:topmenu-gtk-module"
+#
