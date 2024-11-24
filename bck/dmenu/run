@@ -1,0 +1,5 @@
+#!/bin/bash
+export PATH="$PATH:~/bin"
+#dmenu_run
+
+echo -e "first\nsecond\nthird" | rofi -dmenu

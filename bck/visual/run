@@ -1,0 +1,18 @@
+#!/bin/bash
+#原本这里存放什么不记得了,现在放的是全桌面,全屏的ncmpcpp 波形效果
+#相关的一些配置在ccsm中
+export ROOT=$(dirname "$0")
+#bash $ROOT/mpd/visual &
+#bash $ROOT/matrix/visual &
+#bash $ROOT/htop/visual &
+
+#2017-09-10 11:29:11 Sun NZST
+#bash $ROOT/mpd/mini
+
+#touch /dev/shm/quit-visualizer
+#sleep 1
+#rm /dev/shm/quit-visualizer
+#python ~/git/visualizer/mpd.py
+
+#性能更好
+python ~/git/visualizer/gtk.py

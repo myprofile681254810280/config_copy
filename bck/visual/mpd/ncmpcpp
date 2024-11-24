@@ -1,0 +1,36 @@
+#!/bin/bash
+#配置文件改加什么标记才方便vim给出颜色提示?
+startup_screen = "visualizer"
+user_interface = "classic"
+
+clock_display_seconds = "no"
+display_bitrate = "no"
+header_visibility = "no"
+statusbar_visibility = "no"
+titles_visibility = "no"
+colors_enabled = "no"
+enable_window_title = "no"
+display_volume_level = "no"
+mouse_support = "no"
+
+
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_sync_interval = "30" 
+#;visualizer_in_stereo = "no"
+##visualizer_in_stereo = "yes"
+#visualizer_type = "wave" 
+visualizer_type = "spectrum" 
+#默认的字符位宽不对,所以要改掉
+visualizer_look = "••"
+
+#visualizer_look = ".."
+#visualizer_look = "oo"
+
+#mpd_port=123
+#progressbar_look = "  "
+#progressbar_look = "••"
+progressbar_look = "─ "
+progressbar_boldness ="no"
+#visualizer_look = "+·"
+#visualizer_look = ".."

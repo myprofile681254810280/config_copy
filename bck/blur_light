@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+
+export QMLTERM_THEME=transparent
+export THEME_IPYTHON=plain
+export THEME_EMACS=white
+export THEME_FISH=light
+export MYVIMRC=~/config/rc/vim/transparent.vim
+export COLORFGBG="0;15"
+export MY_COLOR="0;15"
+
+#export QML2_IMPORT_PATH=~/git/QMLProcess/build:~/git/qmltermwidget/build
+
+exec ~/git/qmlterm/build/qmlterm  -c ~/config/rc/qmlterm/blur_light.ini  "$@"
+
+
+#虽然已经可以把qmlterm安装到/usr/bin了,但是copy-to-vim脚本还没有一并带过去.
+#qmlterm  -c ~/config/term/qmlterm/qmltermrc_blur_white.ini  "$@"
+

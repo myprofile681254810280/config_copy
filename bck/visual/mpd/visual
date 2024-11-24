@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#暂且只有这里用了,所以可以直接kill
+#pkill notile
+pkill ncmpcpp
+
+#区分开wm_class,用tile筛选.
+cp -n ~/git/qmlterm/build/qmlterm  ~/git/qmlterm/build/noblur_notile_visual
+
+export ROOT=~/config/media/mpd-visual
+export ROOT=~/bin/visual/mpd
+export ROOT=$(dirname "$0")
+
+~/git/qmlterm/build/noblur_notile_visual \
+    -c $ROOT/term.ini \
+    -e "ncmpcpp -s visualizer -c $ROOT/ncmpcpp"

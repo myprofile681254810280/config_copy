@@ -1,0 +1,19 @@
+#!/bin/bash
+#暂且这东西不能用,因为ncmpcpp处理大量字符的时候cpu消耗很大,
+#导致在现在的电脑上非常容易造成kworker阻塞.
+#所以只能等到将来换电脑才能用这种cpu消耗大的东西了.
+
+#暂且只有这里用了,所以可以直接kill
+#pkill notile
+pkill ncmpcpp
+
+#区分开wm_class,用tile筛选.
+cp -n ~/git/qmlterm/build/qmlterm  ~/git/qmlterm/build/noblur_notile_visual
+
+export ROOT=~/config/media/mpd-visual
+export ROOT=~/bin/visual/mpd
+export ROOT=$(dirname "$0")
+
+~/git/qmlterm/build/noblur_notile_visual \
+    -c $ROOT/term_large.ini \
+    -e "ncmpcpp -s visualizer -c $ROOT/ncmpcpp_large"

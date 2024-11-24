@@ -1,0 +1,48 @@
+#!/bin/bash
+#修正latte dock改掉的路径
+export XDG_CONFIG_HOME=~/.config
+
+mpc pause
+
+#FILE_PATH=`realpath "$1"`
+
+#if [ right = `python ~/bin/rot.py` ];then
+#  MPV_ROTATION="--video-rotate=270"
+#  echo rotate
+#else
+#  MPV_ROTATION="--video-rotate=0"
+#fi
+
+
+pkill mpv
+mpv \
+  --script-opts=osc-layout=bottombar \
+  --script-opts=osc-timetotal=yes \
+  --no-border \
+  --save-position-on-quit \
+  "$1" \
+
+  #$MPV_ROTATION \
+exit
+
+
+#UID=`id -u $USER`
+  #--input-ipc-server=/run/user/$UID/mpvsocket \
+  #--volume=60 \
+#  &
+
+  #--save-position-on-quit \ 这个选项据说在 SIGTERM的情况下是有效的.
+  #--write-filename-in-watch-later-config \
+  #这个对于resume没有用处,这个似乎并不像mpd一样定时调度，而是仅仅在退出的时候保存一次,但是crash的话,就保存不了了.所以解决不了mpv crash的问题.
+  #--geometry=100%x100%+0+0 \
+  #--autofit=100% \
+#   \
+  #--no-osc \
+  #--osd-bar \
+
+# keybind 
+# 播放next     '>' 
+# 播放previous   '<'
+# 文件名      'I'
+
+

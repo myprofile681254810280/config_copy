@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pkill htop
+
+#区分开wm_class,用tile筛选.
+cp -n ~/git/qmlterm/build/qmlterm  ~/git/qmlterm/build/noblur_notile_visual
+
+export ROOT=$(dirname "$0")
+
+~/git/qmlterm/build/noblur_notile_visual \
+    -c $ROOT/term.ini \
+    -e "htop -C -u root"
+    #-e cmatrix 

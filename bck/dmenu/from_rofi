@@ -1,0 +1,10 @@
+#!/bin/bash
+python ~/bin/dmenu/from_rofi.py | dmenu \
+    -nb white \
+    -nf black \
+    -o 0.8 \
+    -dim 0.1 \
+    -l 5 \
+    -fn "setofont-22" | bash
+
+    #-l 3

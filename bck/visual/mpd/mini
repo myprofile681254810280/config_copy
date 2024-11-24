@@ -1,0 +1,13 @@
+#!/bin/bash
+pkill ncmpcpp
+
+ROOT=$(dirname "$0")
+
+exec python ~/app/term_background/main.py "ncmpcpp -c $ROOT/mini.conf" \
+    --opacity=0.05 \
+    --wmclass=qmlterm_background \
+    --font-size=10 \
+    --right-click="bash ~/bin/compiz/menu & "
+#14字体 恰好铺满
+#如果不用方块而用点阵,那么就不需要恰好铺满了,可以用更大的字体
+

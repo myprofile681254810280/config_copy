@@ -1,0 +1,12 @@
+#!/bin/bash
+#export PATH=$1
+
+if [ -f "$1" ]
+then
+    ~/bin/term_blur -e "vim $1 -c \"noremap p o<ESC>p\" -c \"map q <Esc>:wq<CR>\""
+    #echo "$file found."
+else
+    echo "$file not found."
+fi
+
+
