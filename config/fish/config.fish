@@ -67,7 +67,7 @@ alias q='exit'
 #alias v="bash ~/bin/custom/vim"
 
 #alias commit="bash ~/bin/git/git_commit_push.sh"
-alias bash="bash ~/bin/filter/bash_filter.sh"
+alias bash="bash ~/bin/bash_filter.sh"
 #自定义的ipython没什么用
 #alias ipython="bash ~/bin/custom/ipython"
 #set EDITOR vim
