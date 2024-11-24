@@ -1,0 +1,14 @@
+* 入口
+  主要入口包括
+  - rofi执行
+  - fish执行
+  - xkeybind执行
+  - ranger执行
+  - xinitrc
+** 异同
+  xkeybind ranger同属快捷键,rofi fish同属键盘命令,
+  所以前两者的文件名需要易于辨识,加上x权限,并且不宜放入树形结构增加命令长度.
+  
+  rofi和xkeybind同属x,而ranger fish则不是.
+  
+
