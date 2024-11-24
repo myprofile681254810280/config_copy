@@ -57,8 +57,11 @@ cp kwinrc  ~/.config/
 cp powerdevilrc  ~/.config/
 
 #两份非常冗余的快捷键设置，未来需要改动的话，大概需要大修消除冗余，但是现在并不想去改
+#这份存放的是kwin自己的快捷键，比如alt tab workspace切换
 cp kglobalshortcutsrc  ~/.config/
-cp khotkeysrc  ~/.config/
+#这份是自定义的，快捷键到命令行的映射，和xbindkey功能重叠的是这个。但是它的api改动频繁，比如qdbus改成了qdbus6什么的，所以稳定使用还是xbindkey更好
+#cp khotkeysrc  ~/.config/
+
 #为了关掉而设置
 cp kiorc ~/.config/
 cp baloofilerc ~/.config/
