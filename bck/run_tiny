@@ -1,0 +1,22 @@
+#!/bin/bash
+
+bash ~/bin/dmenu_run_history -fn "xos4 Terminus"
+exit
+
+#rofi 延迟感严重
+exec rofi -font "mono 20" -show run
+exit
+#env 放在这里加载合适吗?和xinit比,这里适合重载,但是另一方面,除了rofi入口,gnome-pie入口也要加入.幸运的是我们似乎没有其他入口了
+#source ~/config/rc/x/env.sh
+#exec dmenu_run
+
+exec rofi -font "mono 20" -max-history-size 100 -show run
+exit
+
+~/bin/term
+
+exit
+
+if [ -f /bin/fish ];then
+    exec bash ~/bin/rofi/top_tiny
+fi

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#2018-01-06 21:14:14 Sat CST
+#在pacman.conf中暂停firefox的升级,需要等esr修复OpenGL问题,或者59提供osd
+#切换chrome用opengl网站太麻烦了
+#exec firefox "$@" 
+
+#exec ls
+#防http劫持
+#python ~/app/ahjs5s/main.py ~/app/ahjs5s/config.json >> ~/del/log/websock.log &
+
+#exit
+
+#exec firefox "$@"
+# 需要其他profile改为--no-remote
+exec ~/ff/esr/firefox --profile ~/.mozilla/esr "$@"     
+
+#firefox
+
+##################################
+#一些专用profile
+#baidu盘油猴脚本等
+#https://github.com/syhyz1990/baiduyun
+#firefox --profile ~/.mozilla/baidupan --new-instance 
+#reCAPTCHA
+#https://steamcn.com/t318347-1-1
+#firefox --profile ~/.mozilla/recap --new-instance 
+###################################
+
+#下面是停止自动升级后的两个选择,52更新一些,但是56似乎用的技术更好些,不会卡,但是有一些bug
+#exec ~/.local/bin/ff5274/firefox --profile ~/.mozilla/ff5274 "$@" 
+#exec ~/.local/bin/ff5602/firefox --profile ~/.mozilla/ff5602 "$@" 
+
+#用来生成search xml
+#exec ~/.local/bin/esr38/firefox --profile ~/.mozilla/esr38 "$@" 
+#exec firefox --profile ~/.mozilla/new "$@"
+#exec /bin/firefox --profile ~/.mozilla/55 "$@" 
+#exec ~/.local/bin/ff56/firefox --profile ~/.mozilla/55 "$@" 
+#exec ~/.local/bin/night/firefox --profile ~/.mozilla/night "$@"
+
+#exec chromium   --force-device-scale-factor=1 "$@" 
+
+#xdg-open "$@"

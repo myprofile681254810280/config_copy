@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+bash ~/app/desktop_menu/run_menu.sh
+exit
+
+
+cd ~
+
+#菜单部分
+python ~/app/desktop_menu/desktop_menu.py \
+    ~/app/desktop_menu/menu.json \
+    ~/app/desktop_menu/menu.css
+
+#if [[ "$WINDOW_MANAGER" = "kwin" ]];then
+#    echo kwin
+#else
+    #左上角singleton
+    exec python ~/app/desktop_menu/desktop_topleft_qt.py
+#fi

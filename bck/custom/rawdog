@@ -1,0 +1,4 @@
+#!/bin/bash
+rm ~/.rawdog/output.html
+rawdog -w 
+~/bin/web ~/.rawdog/output.html

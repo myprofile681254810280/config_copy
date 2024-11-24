@@ -1,0 +1,3 @@
+#!/bin/bash
+#exec dolphin --new-window "$@"
+exec dolphin "$@"

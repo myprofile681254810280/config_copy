@@ -1,0 +1,23 @@
+#!/bin/bash
+    #vim -u 的表现奇怪,用了之后backspace就不能删除上一行了
+    #这个脚本写的是有问题的,但是至少用它一段时间,靠它提示的话,应该可以一定程度的修正操作习惯.
+script="""
+import sys
+if sys.argv[1].endswith('.org'):
+    print(0)
+else:
+    print(1)
+"""
+#https://github.com/vim/vim/issues/2008
+#处理一点错误,估计未来版本会修正
+#export TERM=ansi
+
+correct=`python -c "$script" "$1"`
+if [ $correct = 1 ];then
+    exec vim "$@"
+    #exec vim --servername VIMSERVER$(date +%s) "$@"
+else
+    echo emacs "$@"
+fi
+
+#python ~/bin/filter/edit_filter.py "$@"

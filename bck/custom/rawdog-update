@@ -1,0 +1,7 @@
+#!/bin/bash
+#用--config似乎难以加载附加的配置,所以只能手动组合config了
+
+#cat ~/.rawdog/config_bck > ~/.rawdog/config
+#cat ~/private/feed >> ~/.rawdog/config
+
+rawdog -u

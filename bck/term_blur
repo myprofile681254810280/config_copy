@@ -1,0 +1,4 @@
+#!/bin/bash
+#exec ~/bin/qmlterm/blur_light "$@"
+
+exec ~/bin/qmlterm/blur_light2 "$@"

@@ -1,0 +1,26 @@
+#!/bin/bash
+#从clipboard加载内容,通过v模式选择后,按q退出,选择的被内容会被xsel加载到clipboard
+
+export TEMP_FILE="/tmp/edit_clip_temp_file"
+
+rm $TEMP_FILE
+
+
+
+#从clipboard加载内容
+export CMD1="normal!p"
+#映射q为,"ay复制,gg顶部,gg顶部第二次,"bd删除,G底部,"ap粘贴,:wq保存退出.
+export CMD2='map q "aygggg"bdG"ap:wq<CR>'
+
+~/bin/term_tiny -e """
+vim $TEMP_FILE  \
+    -c '$CMD1' \
+    -c '$CMD2'  
+"""
+
+
+cat $TEMP_FILE | xsel -i
+#不知道为什么要这么做,但是ranger用了这个办法.
+cat $TEMP_FILE | xsel -i -b
+#小问题:复制的结果多带了一个回车,
+rm $TEMP_FILE

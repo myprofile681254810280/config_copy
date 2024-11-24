@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#cd ~
+#rofi -show run
+#exit
+
+if [ -f /bin/fish ];then
+    exec bash ~/bin/rofi/fullscreen
+fi
