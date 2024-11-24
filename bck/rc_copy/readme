@@ -1,0 +1,28 @@
+#!/bin/bash
+
+#这里保存需要备份但是不需要同步,同时又经常被修改的文件
+
+这里包括3种类型的配置,直接从rc 种复制出来的,和dconf和gconf备份出来的
+做成备份而不是备份原data的原因是在于,原data会被程序不断修改,但是修改的内容不能备份
+
+2017-07-23 16:25:02 Sun NZST
+rofi 加入这里,而mpd dislike 留在encrypted 中,是因为rofi的改动频繁而无意义
+同样改动频繁加入进来的有kde系 和compiz
+这样以后就可以方便用git diff 确认确实的改动了,可以不用git state了
+
+不过mimeapps.list也不放在这里.差别在于,mimeapps.list的改动是有意义的,而且频率很小,并且我们会希望在它被改动的时候,确认后再提交,
+
+
+dconf dump PATH > FILE
+dconf load PATH < FILE
+
+gconftool-2 --dump PATH > FILE
+gconftool-2 --load FILE
+
+
+dconf和gconf不能编入dump脚本不能直接运行,只能逐条运行,因为程序会不断改变dconf和gconf,但是不是必要的,所以我们只会在配置完毕的时候做一次备份.不过反过来说倒是可以写一个load脚本,load的时候不会是逐条运行的
+
+
+dconf dump /org/onboard/ | sed "s/\/home\/$USER/\/homelink/g" > ./conf/onboard
+
+gconftool-2 --dump /apps/docky-2 > ./conf/docky
