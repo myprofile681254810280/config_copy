@@ -22,8 +22,8 @@ cp fcitx5 -r ~/.config
 rm ~/.config/default -r
 cp default -r ~/.config
 #默认的mpv不太好用，比如说窗口的长宽是固定比例的
-rm ~/.config/mpv -r
-cp mpv -r ~/.config
+#rm ~/.config/mpv -r
+#cp mpv -r ~/.config
 #fontconfig基本上是手写的，需要备份
 rm ~/.config/fontconfig -r
 cp fontconfig -r ~/.config
