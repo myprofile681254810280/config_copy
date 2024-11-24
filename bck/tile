@@ -1,0 +1,16 @@
+#!/bin/sh
+#echo "$@" > ~/del/1
+
+#autotile 现在用起来还挺顺手的
+#虽然这么说,但是要记住当前状态还是比较困扰的
+#if [ "$1" = tile ];then
+#    exec ~/bin/autotile
+#fi
+
+
+#release 用
+#exec freetile "$@" --debug
+
+#测试用
+cd ~/app/freetile
+python -m freetile "$@" --debug &> ~/cache/freetile.log
