@@ -76,8 +76,9 @@ mkdir ~/.config/pip/
 echo "[global]"  > ~/.config/pip/pip.conf
 echo "proxy = $myproxy" >> ~/.config/pip/pip.conf
 #这个或许关掉比较好，因为可能删掉我们放的其他设置
-echo "[global]"  > ~/.gitconfig
-echo "proxy = $myproxy" >> ~/.gitconfig
+#echo "[global]"  > ~/.gitconfig
+#echo "proxy = $myproxy" >> ~/.gitconfig
+git config --global http.proxy $myproxy
 
 
 
