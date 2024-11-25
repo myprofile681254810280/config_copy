@@ -1,26 +1,55 @@
+[InactiveShadow]
+InnerColor=255,255,255
+ShadowSize=0
+UseOuterColor=true
+VerticalOffset=0
+
+[Style]
+MenuOpacity=0
+
 [Windeco]
+AnimationsEnabled=false
 DrawBackgroundGradient=false
+DrawBorderOnMaximizedWindows=true
+DrawSizeGrip=false
+UseWindowColors=false
 
 [Windeco Exception 0]
-BorderSize=1
-Enabled=true
-ExceptionPattern=firefox
-ExceptionType=0
-HideTitleBar=true
-Mask=0
-
-[Windeco Exception 1]
-BorderSize=1
+BorderSize=0
 Enabled=true
 ExceptionPattern=myvte-bitmap
 ExceptionType=0
 HideTitleBar=true
 Mask=0
 
-[Windeco Exception 2]
-BorderSize=1
+[Windeco Exception 1]
+BorderSize=0
 Enabled=true
 ExceptionPattern=Panon
+ExceptionType=0
+HideTitleBar=true
+Mask=0
+
+[Windeco Exception 2]
+BorderSize=0
+Enabled=true
+ExceptionPattern=qmlterm
+ExceptionType=0
+HideTitleBar=true
+Mask=0
+
+[Windeco Exception 3]
+BorderSize=0
+Enabled=true
+ExceptionPattern=fcitx
+ExceptionType=0
+HideTitleBar=false
+Mask=0
+
+[Windeco Exception 4]
+BorderSize=0
+Enabled=true
+ExceptionPattern=mpv
 ExceptionType=0
 HideTitleBar=true
 Mask=0

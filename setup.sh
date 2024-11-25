@@ -66,6 +66,7 @@ cp kglobalshortcutsrc  ~/.config/
 cp kiorc ~/.config/
 cp baloofilerc ~/.config/
 # breezerc做了一些和kwinrule类似的操作, oxygen里面则是以前留下的类似配置，而现在并不用oxygen
+# 此外breezerc中可以设置menu opacity=0，这算是和kv类似的设置，但是简陋很多，不过好像gui中没这个选项
 cp kwinrulesrc ~/.config/
 cp breezerc ~/.config/
 cp oxygenrc ~/.config/
