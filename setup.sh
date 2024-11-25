@@ -12,31 +12,31 @@ cp dolphinrc ~/.config/
 cp freetilerc ~/.config/
 
 #
-rm ~/.config/yapf -r
+#rm ~/.config/yapf -r
 cp yapf -r ~/.config
 
 #主要是fcitx的外观配置，以及设定rime为主要输入法
-rm ~/.config/fcitx5 -r
+#rm ~/.config/fcitx5 -r
 cp fcitx5 -r ~/.config
 #不记得是什么了，但是似乎是一些色彩配置，看起来像是kde用的
-rm ~/.config/default -r
-cp default -r ~/.config
+#rm ~/.config/default -r
+#cp default -r ~/.config
 #默认的mpv不太好用，比如说窗口的长宽是固定比例的
 #rm ~/.config/mpv -r
 #cp mpv -r ~/.config
 #fontconfig基本上是手写的，需要备份
-rm ~/.config/fontconfig -r
+#rm ~/.config/fontconfig -r
 cp fontconfig -r ~/.config
 #一份基本的htop配置，实际用总会有各种改动
-rm ~/.config/htop -r
+#rm ~/.config/htop -r
 cp htop -r ~/.config
 #最危险的配置，里面的交叉引用最多，应该考虑减少里面的交叉引用
-rm ~/.config/fish -r
+#rm ~/.config/fish -r
 cp fish -r ~/.config
 #里面有一些css，似乎是选择arc theme的时候留下的，此外有用的是setting.ini,里面设置了icon选择
-rm ~/.config/gtk-3.0 -r
+#rm ~/.config/gtk-3.0 -r
 cp gtk-3.0 -r ~/.config
-rm ~/.config/gtk-4.0 -r
+#rm ~/.config/gtk-4.0 -r
 cp gtk-4.0 -r ~/.config
 cp .gtkrc-2.0 ~/
 cp .gtkrc-2.0.mine ~/
