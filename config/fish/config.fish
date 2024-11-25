@@ -5,43 +5,43 @@
 #一些情况下会带来问题,比如说sudo su后安装bootstrap
 #也就是说是因为sudo 继承了umask导致的,所以或许可以在root那边用配置重置umask
 
-if [ $QMLTERM_THEME ]
-else
-    export QMLTERM_THEME='transparent'
-end
-
-if [ $THEME_FISH ]
-else
-    export THEME_FISH='dark'
-end
-
-if [ 'black' = $QMLTERM_THEME ]
+#if [ $QMLTERM_THEME ]
+#else
+#    export QMLTERM_THEME='transparent'
+#end
+#
+#if [ $THEME_FISH ]
+#else
+#    export THEME_FISH='dark'
+#end
+#
+#if [ 'black' = $QMLTERM_THEME ]
 #    source ~/config/rc/fish/theme-cbjohnson/fish_prompt.fish
 #    source ~/config/rc/fish/theme-budspencer/fish_greeting.fish
 #    source ~/config/rc/fish/theme-budspencer/fish_prompt.fish
 #    source ~/config/rc/fish/theme-budspencer/fish_mode_prompt.fish
 #    source ~/config/rc/fish/theme-budspencer/fish_right_prompt.fish
 #    source ~/config/rc/fish/theme-budspencer/fish_prompt.fish
-    source ~/.config/fish/theme-bobthefish/fish_prompt.fish
+#    source ~/.config/fish/theme-bobthefish/fish_prompt.fish
   #  source ~/config/rc/fish/shellder/fish_prompt.fish
   #  source ~/config/rc/fish/theme-bobthefish/fish_greeting.fish
   #  source ~/config/rc/fish/theme-bobthefish/fish_title.fish
   #  这东西不能用,连按回车的时候就会感觉到很耗性能.
    # source ~/config/rc/fish/theme-bobthefish/fish_right_prompt.fish
-else if [ 'transparent' = $QMLTERM_THEME ]
+   #else if [ 'transparent' = $QMLTERM_THEME ]
     source ~/.config/fish/prompt_git.fish
     source ~/.config/fish/prompt_pwd.fish
     source ~/.config/fish/fish_prompt.fish
-end
-
-if [ 'dark' = $THEME_FISH ]
-    source ~/.config/fish/color_dark.fish
-end
+    #end
+    #
+    #if [ 'dark' = $THEME_FISH ]
+    #    source ~/.config/fish/color_dark.fish
+    #end
 
 
 source ~/.config/fish/fish_title.fish
 
-set LS_ARGUMENTS ' '
+#set LS_ARGUMENTS ' '
 
 #覆盖一些危险的命令。
 #alias rm='echo this is trash-cli;trash'
@@ -81,20 +81,20 @@ alias v=vim
 #alias qmlterm="~/git/qmlterm/build/qmlterm"
 
 
-#做不到直接赋值COLORFGBG,所以放这里了.
-if [ $MY_COLOR ]
-    set COLORFGBG $MY_COLOR
-end
-
-#.xprofile .xsessionrc裏面放了都沒效果,只好放這裏了
-#bash ~/bin/keys.sh
-
-
-#export fish_greeting=
-#set -gx PATH $PATH $HOME/.local/bin $HOME/dmzj/bin
-#set -gx PATH $PATH /mybin/bin
-#set LD_LIBRARY_PATH /opt/cuda/lib64 $LD_LIBRARY_PATH
-
-#source ~/config/rc/shell_env.sh
-
-export TERM=xterm-256color
+##做不到直接赋值COLORFGBG,所以放这里了.
+#if [ $MY_COLOR ]
+#    set COLORFGBG $MY_COLOR
+#end
+#
+##.xprofile .xsessionrc裏面放了都沒效果,只好放這裏了
+##bash ~/bin/keys.sh
+#
+#
+##export fish_greeting=
+##set -gx PATH $PATH $HOME/.local/bin $HOME/dmzj/bin
+##set -gx PATH $PATH /mybin/bin
+##set LD_LIBRARY_PATH /opt/cuda/lib64 $LD_LIBRARY_PATH
+#
+##source ~/config/rc/shell_env.sh
+#
+#export TERM=xterm-256color
